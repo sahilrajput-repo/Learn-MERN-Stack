@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists Forms & Tables</title>
+</head>
+<body>
+    <!-- List in HTML -->
+    <!-- Lists are used to represent real life list data -->
+    <!-- unordered lists -->
+    <h1>Unordered List</h1>
+    <ul type>
+        <li>Pen</li>
+        <ul>
+            <li>Ball Point Pen</li>
+            <li>Gel Point Pen</li>
+        </ul>
+        <li>Paper</li>
+        <li>Pencil</li>
+        <ul>
+            <li>Classmate</li>
+            <li>Schoolmate</li>
+        </ul>
+    </ul>
+
+    <!-- ordered lists -->
+    <h1>Ordered List</h1>
+    <ol type="A">
+        <li>Pen</li>
+        <ol>
+            <li>Ball Point Pen</li>
+            <li>Gel Point Pen</li>
+        </ol>
+        <li>Paper</li>
+        <li>Pencil</li>
+        <ol>
+            <li>Classmate</li>
+            <li>Schoolmate</li>
+        </ol>
+    </ol>
+    <hr>
+
+    <!-- Tables in HTML -->
+    <!-- Tables are used to represent real life tables data. -->
+    <!-- tr used to display table row -->
+    <!-- td used to display table data -->
+    <!-- th used to display table header -->
+    <table>
+        <thead>
+        <!-- Caption in Tables -->
+        <caption>Student Data</caption>
+        <!-- thead & tbody in Tables -->
+        <tr>
+            <!-- <th>Name</th>
+            <th>Roll No</th> -->
+            <th colspan="2">Information</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Sahil</td>
+            <td>057</td>
+        </tr>
+        <tr>
+            <td>Bhavya</td>
+            <td>059</td>
+        </tr>
+        <tr>
+            <td>Sahil</td>
+            <td>102</td>
+        </tr>
+    </tbody>
+    </table>
+    <hr>
+
+    <!-- Form in HTML -->
+    <!-- Forms are used to collect data from the user -->
+    <!-- Eg- sign up/login/help requests/contact me -->
+
+    <!-- Action in Form -->
+    <!-- Action attribute is used to define what action needs to be performed when a form is submitted -->
+
+    <!-- Form Element : Input -->
+    <!-- Syntax : <input type="text" placeholder="Enter Name"> -->
+
+    <form action="/action.php">
+        <input type="text" placeholder="username"> <br>
+        <input type="password" placeholder="password">
+    </form>
+    <hr>
+
+    <!-- Label -->
+    <!-- Syntax: 
+    <label for="id1">
+        <input type="radio" value="class X" name="class" id="id1">
+    </label>
+    <label for="id2">
+        <input type="radio" value="class X" name="class" id="id2">
+    </label> -->
+    <form action="">
+        <label for="101">
+            <input type="radio" value="class XI" name="class" id="101">class XI
+        </label>
+        <br>
+        <label for="102">
+            <input type="radio" value="class XI" name="class" id="102">class XII
+        </label>
+    </form>
+    <hr>
+
+    <!-- Class & Id -->
+    <!-- Syntax: 
+    <div id="id1" class="group1">
+
+    </div>
+    <div id="id2" class="group1">
+        
+    </div> -->
+
+
+    <!-- Checkbox -->
+    <!-- syntax:
+    <label for="id1">
+        <input type="checkbox" value="class X" name="class" id="id1">
+    </label>
+    <label for="id2">
+        <input type="checkbox" value="class X" name="class" id="id2">
+    </label> -->
+
+    <h2>Select any three subject</h2>
+    <form action="/action.php">
+        <label for="101">
+            <input type="checkbox" value="Physics" name="sunject" id="101">Physics
+        </label>
+        <br>
+        <label for="102">
+            <input type="checkbox" value="Chemistry" name="sunject" id="102">Chemistry
+        </label>
+        <br>
+        <label for="103">
+            <input type="checkbox" value="Mathematics" name="sunject" id="103">Mathematics
+        </label>
+        <br>
+        <label for="104">
+            <input type="checkbox" value="Computer Science" name="sunject" id="104">Computer Science
+        </label>
+    </form>
+    <hr>
+
+    <!-- Text Area -->
+    <!-- Used to take the feedback from the user -->
+    <form action="/action.php">
+        <textarea name="feedback" id="101" cols="30" rows="10" placeholder="Please give your valuable feedback"></textarea>
+    </form>
+    <hr>
+
+    <!-- Select -->
+    <!-- Syntax:  -->
+    Select Your City
+    <select name="city" id="city">
+        <option value="Delhi">Delhi</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Hydrabad">Hydrabad</option>
+        <option value="Banglore">Banglore</option>
+    </select>
+    <hr>
+
+    <!-- Submit -->
+    <form action="/action.php">
+        <input type="submit" value="submit">
+    </form>
+    <hr>
+
+    <!-- iframe Tag -->
+    <!-- website inside website -->
+    <!-- <iframe src="https://www.incredibleindia.org/content/incredible-india-v2/en.html" frameborder="1"></iframe> -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/mv3spo8rGuI?si=qk1ZMk4WVpd8Nj23" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <iframe src="https://www.wikipedia.org/" width="560" height="315"></iframe>
+    <hr>
+    <br>
+
+    <!-- Video Tag -->
+    <!-- Attributes
+    -controls
+    -height
+    -width
+    -loop
+    -autoplay -->
+    <video src="Sequence.mp4" width="560" height="315" controls loop>My Video</video>
+</body>
+</html>
